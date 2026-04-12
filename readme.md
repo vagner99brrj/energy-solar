@@ -15,3 +15,29 @@ O foco principal é levar informação acessível e ferramentas de análise para
 - Famílias de baixa renda e comunidades em vulnerabilidade.
 - Pequenos empreendedores de periferia.
 - Gestores de prédios públicos (Escolas, Postos de Saúde).
+
+🌿 Fluxo de Branches (Git)
+Para manter a integridade do código, adotamos o seguinte modelo de ramificação:
+
+main: Versão estável e finalizada. Apenas código revisado e aprovado chega aqui.
+
+develop: Branch principal de integração. Todos os novos recursos são mesclados aqui antes de irem para a main.
+
+feature/nome-da-tarefa: Branches temporárias criadas para o desenvolvimento de funcionalidades específicas.
+
+Como contribuir: Crie uma branch a partir da develop:
+
+git checkout -b feature/nome-da-funcionalidade
+
+Após finalizar, abra um Pull Request para a branch develop.
+
+🛠️ Padrões de Desenvolvimento
+Boas Práticas de Commit Os commits devem ser claros e em inglês (conforme padrão do time), seguindo o formato: tipo: descrição curta e objetiva
+
+Exemplo: feat: add scam alert component
+
+Exemplo: fix: resolve broken link in footer
+
+Documentação Local: Toda documentação técnica deve residir na pasta docs/.
+
+Escrita: Use linguagem objetiva e padronizada. Mantenha os diagramas e textos atualizados conforme o projeto evolui.
